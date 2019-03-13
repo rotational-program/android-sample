@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">Sample</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Activity Names-->
+    <string name="title_activity_main">Water Points</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_reset_password">Reset Password</string>
+    <string name="title_activity_water_point">Water Points</string>
+    <string name="title_activity_reports">Tickets</string>
+    <string name="title_activity_site_reports">Site Reports</string>
+
+    <!-- Strings related to login -->
+    <string name="email_or_phone_number">Email or Phone Number</string>
+    <string name="prompt_email">username@domain.com</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_login">Login</string>
+    <string name="action_reset_password">Forgot your password?</string>
+    <string name="action_register">Don\'t have an account? Register</string>
+    <string name="error_username_field_required">The username field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- Strings related to register -->
+    <string name="prompt_first_name">First Name</string>
+    <string name="prompt_last_name">Last Name</string>
+    <string name="prompt_mobile_number">Mobile Phone</string>
+    <string name="prompt_re_enter_password">Re-enter Password</string>
+    <string name="error_all_required">All the fields are required</string>
+    <string name="error_first_name_field_required">First name field is required</string>
+    <string name="error_last_name_field_required">Last name field is required</string>
+    <string name="error_nationality_required">Your nationality is required</string>
+    <string name="error_mobile_phone_required">This mobile phone field is required</string>
+    <string name="error_password_required">The password field is required</string>
+    <string name="role">Role</string>
+    <string name="citizen">Citizen</string>
+    <string name="county_officer">County Officer</string>
+    <string name="other">Other</string>
+    <string name="warning_message_county">Would you like to proceed with no county selected?</string>
+    <string name="error_message_county_violation">You are only allowed to select one county</string>
+    <string name="error_message_county">Select county to proceed</string>
+    <string name="error_message_sub_county">Select sub-county to proceed</string>
+    <string name="error_message_organization">Select an organization to proceed</string>
+
+    <!-- Strings related to reset password -->
+    <string name="description_mobile_number">In order to reset your password, provide your mobile phone number</string>
+    <string name="description_verify_mobile_number">Provide the 4 digit pin that has been sent to your mobile phone</string>
+    <string name="description_new_password">Create a new password. The minimum threshold for your password is 8 characters.</string>
+    <string name="prompt_new_password">New Password</string>
+
+    <!-- Strings related to dashboard -->
+    <string name="map">Map</string>
+    <string name="list">List</string>
+
+    <!-- Strings related to buttons -->
+    <string name="action_next">Next</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_back">Back</string>
+    <string name="action_sign_up">Register</string>
+    <string name="action_reset">Reset</string>
+
+    <!-- Strings related to alert dialog -->
+    <string name="error">Error</string>
+    <string name="warning">Warning</string>
+    <string name="ok">Ok</string>
+    <string name="exit">Exit</string>
+    <string name="cancel">Cancel</string>
+    <string name="connectivity_error">Connectivity Error</string>
+    <string name="connectivity_error_msg">Check you internet connectivity and try again</string>
+    <string name="retry_error_msg">Retry after 5 minutes or contact the administrator</string>
+    <string name="prompt_username">Username</string>
+    <string name="icon_desc">icon</string>
+    <string name="title_activity_map">Map</string>
+    action_next
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <array name="temp">
+        <item>Telecom Carrier</item>
+    </array>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_add_report">AddReportActivity</string>
+    <string name="title_activity_add_report_activity">AddReportActivityActivity</string>
+    <string name="title_activity_report">ReportActivity</string>
+    <string name="open">Open</string>
+    <string name="closed">Closed</string>
+
+    <string name="title_activity_splash_fullscreen">WmaaSP</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="guest_user">Guest User</string>
+    <string name="guest_user_name">No email or mobile phone</string>
+
+    <string name="menu_refresh">Refresh</string>
+    <string name="title_capacity">Capacity or Yield (m&#179;)</string>
+    <string name="title_quantity">Quantity (m&#179;)</string>
+    <string name="no_site_reports_filed">No Site Reports Filed</string>
+    <string name="no_tickets_found">No Tickets Found</string>
+
+    <string name="capacity">Capacity (m&#179;)</string>
+    <string name="quantity">Quantity (m&#179;)</string>
+    <string name="yield">Yield (m&#179;)</string>
+    <string name="depth">Depth (m)</string>
+    <string name="quality">Quality</string>
+    <string name="reliability">Reliability</string>
+    <string name="retrieval_means">Retrieval Means</string>
+    <string name="year_of_construction">Year of Construction</string>
+    <string name="telecom_carrier">Telecom Carrier</string>
+    <string name="type">Type</string>
+    <string name="status">Status</string>
+    <string name="area">Area</string>
+    <string name="landmarks">Landmarks</string>
+    <string name="town">Town</string>
+    <string name="distance_from_cc">Distance from headquarters (km)</string>
+    <string name="county">County</string>
+    <string name="ward">Ward</string>
+    <string name="sub_county">Sub County</string>
+    <string name="animals">Animals</string>
+    <string name="people">People</string>
+    <string name="farms">Farms</string>
+    <string name="step_1_of_4_water_point">Step 1 of 4: Water Point</string>
+    <string name="step_2_of_4_water_point">Step 2 of 4: Water Point</string>
+    <string name="step_3_of_4_water_point">Step 3 of 4: Location</string>
+    <string name="step_4_of_4_water_point">Step 4 of 4: Other Information</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="loading">Loading...</string>
+
+</resources>
