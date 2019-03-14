@@ -45,9 +45,12 @@ public class WaterPointsAdapter extends RecyclerView.Adapter<WaterPointsAdapter.
         String operationalStatus = waterPoint.getOperationalStatus() == null
                 ? "-" : waterPoint.getOperationalStatus().getWaterpointstatus();
 
+        String town = waterPoint.getTown() == null ? "-" : waterPoint.getTown();
+
         holder.wpNameView.setText(waterPoint.getName());
         holder.wpTypeName.setText(waterPointType);
         holder.wpFunctionalStatus.setText(operationalStatus);
+        holder.wpTown.setText(town);
         holder.wpFunctionalStatusIcon.setImageDrawable(activity.getResources()
                 .getDrawable(Functions.getStatusIcon(operationalStatus)));
     }
@@ -69,13 +72,14 @@ public class WaterPointsAdapter extends RecyclerView.Adapter<WaterPointsAdapter.
 
     class WaterPointViewHolder extends RecyclerView.ViewHolder {
         ImageView wpFunctionalStatusIcon;
-        TextView wpNameView, wpTypeName, wpFunctionalStatus;
+        TextView wpNameView, wpTypeName, wpFunctionalStatus, wpTown;
         LinearLayout layout;
 
         WaterPointViewHolder(View itemView) {
             super(itemView);
 
             wpNameView = itemView.findViewById(R.id.wp_name);
+            wpTown = itemView.findViewById(R.id.town);
             wpTypeName = itemView.findViewById(R.id.wp_type);
             wpFunctionalStatus = itemView.findViewById(R.id.status);
             wpFunctionalStatusIcon = itemView.findViewById(R.id.status_icon);

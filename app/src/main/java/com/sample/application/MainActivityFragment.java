@@ -3,6 +3,8 @@ package com.sample.application;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -49,7 +51,14 @@ public class MainActivityFragment extends Fragment {
         byCounty.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(),"To be implemented",Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(), "To be implemented", Toast.LENGTH_SHORT).show();
+                CountyWaterPoints fragment = CountyWaterPoints.newInstance();
+
+                FragmentManager fm = getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction = fm.beginTransaction();
+                fm.popBackStack();
+                transaction.add(R.id.fragment, fragment);
+                transaction.commit();
             }
         });
 
@@ -64,10 +73,12 @@ public class MainActivityFragment extends Fragment {
 
     private void loadWaterPoints() {
         GETRequest getRequest = new GETRequest();
+
         final ProgressDialog progressDialog = new ProgressDialog(getActivity());
         progressDialog.setMessage("Loading water points...");
         progressDialog.setCancelable(false);
         progressDialog.show();
+
         getRequest.networkRequest(CommunicationManager.WATER_POINTS_URL, new VolleyResponse() {
             @Override
             public void onSuccessResponse(JSONObject response) throws JSONException, IOException {
@@ -81,7 +92,7 @@ public class MainActivityFragment extends Fragment {
 
             @Override
             public void onErrorResponse(int statusCode, String errorResponse) {
-                Toast.makeText(getActivity(),errorResponse,Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), errorResponse, Toast.LENGTH_LONG).show();
                 progressDialog.cancel();
             }
         });

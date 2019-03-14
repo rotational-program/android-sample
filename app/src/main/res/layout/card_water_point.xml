@@ -49,7 +49,14 @@
                         android:paddingRight="8dp"
                         android:text="Pump Broken"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
-
+                    <TextView
+                        android:id="@+id/town"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:visibility="gone"
+                        android:text="Nairobi"/>
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
